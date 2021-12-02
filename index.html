@@ -15,8 +15,8 @@
 <!--   *********************  HEADING START *********************   --> 
     
     <div class="heading">
-      <h3 class='name'> Alexis Emmanuelle Pascual <br> Han Huynh <br> Katelyn Vu <br> Sharfa Pital</h3> 
-      <h3 class=pId></h3>
+      <h3 class='name'> Alexis Emmanuelle Pascual <br><br> Han Huynh <br> </h3> 
+      <h3 class=pId> Katelyn Vu <br> <br>Sharfa Pital </h3>
             
       <h1>ECE 5 Girl Power</h1> <!-- h1 is heading 1 -->
     </div>
@@ -34,11 +34,11 @@
       
       <br><br>
       
-      <p1>Enter image of your poster below and then delete this line line of code</p1> 
+      <!-- <p1>Enter image of your poster below and then delete this line line of code</p1> 
       
       <br><br>
       
-      <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png'>
+      <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png'>-->
        
       <br><br>
 <!--   *********************  INTRO END *********************   --> 
@@ -47,6 +47,27 @@
  
       
 <!--   *********************  BUTTONS START *********************   -->
+      
+      <!----------------------------------------  BUTTON 0 ---------------------------------------->
+      
+      <div class ='center'>
+        <button type='button' onclick="toggleText0()" class="btn">Team Poster </button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive0' style='display: none'>
+        <div class='box1'>
+          <br>
+         <!-- <p class='box2'>
+            Insert a video of your robot in action!
+          </p> <!-- p is paragraph -->
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp;<img src= 'https://lh3.googleusercontent.com/BawPl4gx2FqrJDWrzFU60k-yoqDotgHU3bQuu_33hbaWoKUekhLN2p7Osyb55O0H7fFuHPct_1F--bLUnSKyx179QujU9_37nI1SVgCKO3wuhAJ8Cjsl5ymN5TO07dmhtyK8cTSb=w700'class='imgmar'>
+          
+            <br> 
+          
+        </div> <!-- This is the end of div interactive -->
+      </div> <!-- This is the end of div box1 -->
+      
+<!--   *********************  BUTTONS END *********************   -->
       
 <!----------------------------------------  BUTTON 1 ---------------------------------------->
       
@@ -179,23 +200,24 @@
         <div class='box1'>
           <br>
           
-            <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png' class='imgmar'>
+             &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<img src = https://lh3.googleusercontent.com/sUpLfkHdiQTfgXPEe2I6OVr4baWTXPT86129LAt5xKxLjf3GuAy4m6YX_R3L7TD33imqA2VXLrOarIVwD_wfy6NSqaSOM2Nzee34vuDmUaGFQeRz8AJKcCQmFsutZ2xCSXqsf_oZmw=w300 class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
-            <p2>IMG1 Add a picture of your robot following a line 
-              (please also attach any updated video to your submission under the video tab)</p2>
-            <br><br> 
+         <!--    <p2>IMG1 Add a picture of your robot following a line 
+              (please also attach any updated video to your submission under the video tab)</p2> -->
+            <br>
           
           <p class='box2'>
             What was the best PID values that you used? How well did this track? Any limitations?
             <br><br>
-            &emsp; Answer here...
+            &emsp; The PID values changed as we moved from one map to other. For seeding round one, we kept the same PID values as given (P = 1, I = 1000, and D = 100), with speed being 60. However, we noticed that our robot went really slow and when we tried to increase the speed the robot was not able to follow the line smoothly. So for round two we decided to play with these values. We significally increased the derivative value from 100 to 350. The robot followed the map very smoothly and did fifteen laps in one minute.  
             <br><br><br>
             What does PID stand for?  What is the purpose of the P, the I, and the D?  
             What steps did you take to choose the best values for your robot? 
             Explain this like you would for someone taking this course next year.
             <br><br>
-            &emsp; Answer here...
+            &emsp; It was quite challenging to find the right PID values, but we were able to figure them out after testing many many times with different PID values. We also did some research to understand how PID worked. We watched a YouTube video (https://youtu.be/4Y7zG48uHRo) which really helped us understand the imapct PID can have when the values are increased or decreased. By simply playing around with the PID values our robot was able to follow a lot of different lines. <br> <br>
+          &emsp;  PID (or Proportional Integral Derivative) is really helpful when you want a vehical to follow a desired path. They are commenly used in autonomous vehicles. PID is a control system that uses error (how far away are you from the desired path) and manipulates it such that you get an error of 0. Increasing the P determines how much you turn towards a specific path. Intergral tries to keep the steady state error to zero if it's not already at zero. Derivative resists the vehicle from moving too quickly towards a path. Choosing the right D value will ensure that our vehicle neither gets overdamped or underdamped when the path changes. 
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
@@ -208,12 +230,19 @@
       
       <div class="interactive" id='interactive6' style='display: none'>
         <div class='box1'>
-          <br>
-          <p class='box2'>
+          
+        <!--  <p class='box2'>
             Insert a video of your robot in action!
-          </p> <!-- p is paragraph -->
+          </p> <!-- p is paragraph -->   
+          <br><br>
+                    SEEDING ROUND #1<br> <br>
+            3 laps in 1 minute with speed at 60, P at 1, I at 1000, and D at 100.<br><br>
+          
           <iframe width="560" height="315" src="https://www.youtube.com/embed/TJ68o-7V-C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
+            <br> <br> <br>
+          SEEDING ROUND #2<br><br>
+            15 laps in 1 minute with speed at 150, P at 1, I at 1000, and D at 350.<br><br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/phRs0xO9fOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
       
@@ -231,6 +260,14 @@
 <!--   *********************  JAVASCRIPT CODE *********************   -->
   
   <script>
+    function toggleText0(text) {
+      var text = document.getElementById("interactive0");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
     function toggleText1(text) {
       var text = document.getElementById("interactive1");
       if (text.style.display === "none") {
